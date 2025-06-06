@@ -24,3 +24,9 @@ pnpx @react-native-community/cli@latest init project01
 ```sh
 pnpm run android
 ```
+
+## Remove .git folder from the project
+
+```sh
+Remove-Item -Path .git -Recurse -Force
+```
