@@ -35,7 +35,7 @@ Remove-Item -Path .git -Recurse -Force
 
 ## React Native CLI Folder Structure
 
-![CLI Folder Structure](https://medium.com/@nitishprasad/react-native-folder-structure-e9ceab3150f3)
+[CLI Folder Structure](https://medium.com/@nitishprasad/react-native-folder-structure-e9ceab3150f3)
 
 ```bash
 AwesomeProject
@@ -55,8 +55,8 @@ AwesomeProject
 
 ## React Native - 15 Core Components
 
-![React Native Components](https://reactnative.dev/docs/components-and-apis)
-![React Native Core Components](https://dev.to/himanshuaggar/react-native-15-core-components-2ifg)
+[React Native Components](https://reactnative.dev/docs/components-and-apis)
+[React Native Core Components](https://dev.to/himanshuaggar/react-native-15-core-components-2ifg)
 
 ```bash
 1. View
@@ -76,4 +76,4 @@ AwesomeProject
 15. SectionList
 ```
 
-![Safe Area](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)
+[Safe Area](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)
