@@ -30,3 +30,50 @@ pnpm run android
 ```sh
 Remove-Item -Path .git -Recurse -Force
 ```
+
+# PRACTICEDAY02
+
+## React Native CLI Folder Structure
+
+![CLI Folder Structure](https://medium.com/@nitishprasad/react-native-folder-structure-e9ceab3150f3)
+
+```bash
+AwesomeProject
+  -src
+    |--- assets
+    |--- screens
+    |--- navigation
+    |--- routes
+    |--- services
+    |--- components
+    |--- hooks
+    |--- types
+    |--- redux
+    |--- utils
+    |--- networking
+```
+
+## React Native - 15 Core Components
+
+![React Native Components](https://reactnative.dev/docs/components-and-apis)
+![React Native Core Components](https://dev.to/himanshuaggar/react-native-15-core-components-2ifg)
+
+```bash
+1. View
+2. Text
+3. TextInput
+4. Button
+5. Image
+6. SafeAreaView
+7. ScrollView
+8. FlatList
+9. Switch
+10. Modal
+11. Pressable
+12. TouchableOpacity
+13. ActivityIndicator
+14. StatusBar
+15. SectionList
+```
+
+![Safe Area](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)
