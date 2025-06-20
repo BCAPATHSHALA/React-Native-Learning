@@ -77,3 +77,12 @@ AwesomeProject
 ```
 
 [Safe Area](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)
+
+# PRACTICEDAY03
+
+[Navigating Between Screens](https://reactnative.dev/docs/navigation)
+
+## What You Need to Understand First:
+- `NavigationContainer`: This is the top-level component that holds your navigation state.
+- `createNativeStackNavigator`: Creates a stack of screens (like pages).
+- `Stack.Navigator` & `Stack.Screen`: Defines the screens inside your stack.

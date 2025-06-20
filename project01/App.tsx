@@ -1,20 +1,11 @@
-import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {StackNavigator} from './src/navigation';
 
-const YourApp = () => {
+export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Try editing me! 🎉</Text>
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
-};
-
-export default YourApp;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
+}
