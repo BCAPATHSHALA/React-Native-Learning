@@ -86,3 +86,5 @@ AwesomeProject
 - `NavigationContainer`: This is the top-level component that holds your navigation state.
 - `createNativeStackNavigator`: Creates a stack of screens (like pages).
 - `Stack.Navigator` & `Stack.Screen`: Defines the screens inside your stack.
+
+# 
