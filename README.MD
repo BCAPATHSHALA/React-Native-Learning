@@ -83,8 +83,21 @@ AwesomeProject
 [Navigating Between Screens](https://reactnative.dev/docs/navigation)
 
 ## What You Need to Understand First:
+
 - `NavigationContainer`: This is the top-level component that holds your navigation state.
 - `createNativeStackNavigator`: Creates a stack of screens (like pages).
 - `Stack.Navigator` & `Stack.Screen`: Defines the screens inside your stack.
 
-# 
+## Native Stack Navigation
+
+Native Stack Navigator provides a way for your app to transition between screens where each new screen is placed on top of a stack.
+
+[Native Stack Navigation](https://reactnavigation.org/docs/native-stack-navigator)
+
+## Button Tab Navigation
+
+A simple tab bar on the bottom of the screen that lets you switch between different routes. Routes are lazily initialized -- their screen components are not mounted until they are first focused.
+
+[Button Navigation](https://reactnavigation.org/docs/bottom-tab-navigator)
+
+
