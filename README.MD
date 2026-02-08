@@ -94,10 +94,14 @@ Native Stack Navigator provides a way for your app to transition between screens
 
 [Native Stack Navigation](https://reactnavigation.org/docs/native-stack-navigator)
 
-## Button Tab Navigation
+## Bottom Tab Navigation
 
 A simple tab bar on the bottom of the screen that lets you switch between different routes. Routes are lazily initialized -- their screen components are not mounted until they are first focused.
 
 [Button Navigation](https://reactnavigation.org/docs/bottom-tab-navigator)
 
+## Drawer Navigation
 
+Drawer Navigator renders a navigation drawer on the side of the screen which can be opened and closed via gestures.
+
+[Drawer Navigation](https://reactnavigation.org/docs/drawer-navigator)

@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {HomeScreen, ProfileScreen} from '../screens';
 import {RootStackParamList} from '../types/navigation';
 import BottomTabNavigator from './BottomTabNavigator';
+import DrawerNavigator from './DrawerNavigator';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -13,6 +14,11 @@ const StackNavigator = () => {
       <Stack.Navigator initialRouteName="Main">
         <Stack.Screen
           name="Main"
+          component={DrawerNavigator}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="BottomTab"
           component={BottomTabNavigator}
           options={{headerShown: false}}
         />
