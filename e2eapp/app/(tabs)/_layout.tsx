@@ -13,6 +13,8 @@ export default function TabsLayout() {
       <Tabs.Screen name="index" options={{ title: "Home" }} />
       {/* Tabs Screens: /(tabs)/feed */}
       <Tabs.Screen name="feed" options={{ title: "Feed" }} />
+      {/* Tabs Screens: /(tabs)/products */}
+      <Tabs.Screen name="products" options={{ title: "Products" }} />
       {/* Tabs Screens: /(tabs)/profile */}
       <Tabs.Screen name="profile" options={{ title: "Profile" }} />
     </Tabs>
