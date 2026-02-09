@@ -1,4 +1,5 @@
 import { Tabs } from "expo-router";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function TabsLayout() {
   return (
@@ -10,13 +11,45 @@ export default function TabsLayout() {
       }}
     >
       {/* Tabs Layout: /(tabs) */}
-      <Tabs.Screen name="index" options={{ title: "Home" }} />
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="home" size={24} color={color} />
+          ),
+        }}
+      />
       {/* Tabs Screens: /(tabs)/feed */}
-      <Tabs.Screen name="feed" options={{ title: "Feed" }} />
+      <Tabs.Screen
+        name="feed"
+        options={{
+          title: "Feed",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="newspaper" size={24} color={color} />
+          ),
+        }}
+      />
       {/* Tabs Screens: /(tabs)/products */}
-      <Tabs.Screen name="products" options={{ title: "Products" }} />
+      <Tabs.Screen
+        name="products"
+        options={{
+          title: "Products",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="cart" size={24} color={color} />
+          ),
+        }}
+      />
       {/* Tabs Screens: /(tabs)/profile */}
-      <Tabs.Screen name="profile" options={{ title: "Profile" }} />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="person" size={24} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
