@@ -1,4 +1,4 @@
-import { Link, useLocalSearchParams } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
 export default function ProductDetails() {
@@ -21,11 +21,12 @@ export default function ProductDetails() {
         <Text className="mt-1 text-sm text-neutral-600">{id}</Text>
       </View>
 
-      <Link href="/products" asChild>
-        <Pressable className="mt-8 rounded-lg bg-black px-4 py-3">
-          <Text className="text-center text-white">Back to Products</Text>
-        </Pressable>
-      </Link>
+      <Pressable
+        onPress={() => router.push("/products")}
+        className="mt-8 rounded-lg bg-black px-4 py-3"
+      >
+        <Text className="text-center text-white">Back to Products</Text>
+      </Pressable>
     </View>
   );
 }

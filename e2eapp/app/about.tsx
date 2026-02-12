@@ -1,4 +1,4 @@
-import { Link } from "expo-router";
+import { router } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
 export default function AboutPage() {
@@ -19,11 +19,12 @@ export default function AboutPage() {
         </Text>
       </View>
 
-      <Link href="/" asChild>
-        <Pressable className="mt-8 rounded-lg bg-black px-4 py-3">
-          <Text className="text-center text-white">Back to Home</Text>
-        </Pressable>
-      </Link>
+      <Pressable
+        onPress={() => router.push("/")}
+        className="mt-8 rounded-lg bg-black px-4 py-3"
+      >
+        <Text className="text-center text-white">Back to Home</Text>
+      </Pressable>
     </View>
   );
 }

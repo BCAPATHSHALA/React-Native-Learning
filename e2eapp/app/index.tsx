@@ -1,4 +1,4 @@
-import { Link } from "expo-router";
+import { router } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
 export default function RootIndex() {
@@ -11,19 +11,32 @@ export default function RootIndex() {
         This is the root route. Use the buttons below to explore the app.
       </Text>
 
-      <View className="mt-6 w-full gap-3">
-        <Link href="/(tabs)" asChild>
-          <Pressable className="rounded-lg bg-black px-4 py-3">
-            <Text className="text-center text-neutral-900 text-xs">
-              Open Tabs
-            </Text>
-          </Pressable>
-        </Link>
-        <Link href="/about" asChild>
-          <Pressable className="rounded-lg border border-neutral-300 bg-white px-4 py-3">
-            <Text className="text-center text-neutral-900">About Page</Text>
-          </Pressable>
-        </Link>
+      <View className="mt-8 w-full gap-4">
+        <Pressable
+          onPress={() => router.push("/(tabs)")}
+          style={({ pressed }) => [{ opacity: pressed ? 0.9 : 1 }]}
+          className="rounded-2xl bg-black px-5 py-4"
+        >
+          <Text className="text-center text-sm font-semibold text-white">
+            Open Tabs
+          </Text>
+          <Text className="mt-1 text-center text-xs text-neutral-300">
+            Browse products and details
+          </Text>
+        </Pressable>
+
+        <Pressable
+          onPress={() => router.push("/about")}
+          style={({ pressed }) => [{ opacity: pressed ? 0.9 : 1 }]}
+          className="rounded-2xl border border-neutral-300 bg-neutral-50 px-5 py-4"
+        >
+          <Text className="text-center text-sm font-medium text-neutral-900">
+            About Page
+          </Text>
+          <Text className="mt-1 text-center text-xs text-neutral-500">
+            Project info and app context
+          </Text>
+        </Pressable>
       </View>
     </View>
   );
