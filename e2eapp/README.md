@@ -3,6 +3,33 @@
 This project is my hands-on practice app built with React Native, Expo Router, and NativeWind.
 It helped me understand routing, layouts, navigation flow, and commonly used UI tags/components.
 
+## Project Structure
+
+```text
+e2eapp/                          # Project root
+|- app/                          # Expo Router routes folder
+|  |- _layout.tsx                # Root Stack navigator config
+|  |- index.tsx                  # Root route (/) entry screen
+|  |- about.tsx                  # Static About page route
+|  |- +not-found.tsx             # 404 / unmatched route screen
+|  |- (tabs)/                    # Tabs route group
+|  |  |- _layout.tsx             # Bottom Tabs navigator config
+|  |  |- index.tsx               # Tabs home screen
+|  |  |- feed.tsx                # Feed tab screen
+|  |  |- profile.tsx             # Profile tab screen
+|  |  |- products/               # Nested products routes
+|  |     |- _layout.tsx          # Products stack layout
+|  |     |- index.tsx            # Products list screen
+|  |     |- [productId].tsx      # Dynamic product details route
+|- components/                   # Reusable UI components
+|  |- LandingPage.tsx            # Landing/home UI component
+|- assets/                       # Static assets (images/fonts etc.)
+|- global.css                    # Global styles (NativeWind input)
+|- tailwind.config.js            # Tailwind/NativeWind config
+|- metro.config.js               # Metro bundler config
+|- babel.config.js               # Babel config
+|- package.json                  # Dependencies + scripts
+```
 ## What I Learned
 
 1. How Expo Router uses the `app/` folder for file-based routing.
@@ -67,3 +94,5 @@ It helped me understand routing, layouts, navigation flow, and commonly used UI 
 3. Add API integration and loading/error states.
 4. Add form handling and validation.
 5. Add basic tests for screens and navigation flow.
+
+
