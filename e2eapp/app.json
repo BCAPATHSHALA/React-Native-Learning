@@ -2,6 +2,7 @@
   "expo": {
     "name": "E2E App",
     "slug": "e2eapp",
+    "scheme": "e2eapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

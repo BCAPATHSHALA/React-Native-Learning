@@ -96,3 +96,41 @@ e2eapp/                          # Project root
 5. Add basic tests for screens and navigation flow.
 
 
+
+## Practice Module 2 (Today)
+
+### What I Practiced Today
+
+1. Built authentication flow screens:
+- Created `Sign In` and `Sign Up` components.
+- Created route pages: `/signin` and `/signup`.
+- Connected auth navigation from landing page buttons.
+
+2. Improved auth UI design:
+- Redesigned both screens with better visual hierarchy.
+- Added form card layout and clearer typography.
+- Kept responsive scrolling support for smaller devices.
+
+3. Worked with keyboard behavior:
+- Used `KeyboardAvoidingView` for better input visibility while typing.
+- Used `ScrollView` with `flexGrow` for better small-screen layout handling.
+
+4. Understood and practiced safe area handling:
+- Learned difference between `SafeAreaProvider` (root context) and `SafeAreaView` (screen-level application).
+- Investigated why screen looked blank with `SafeAreaView` in some cases.
+- Practiced choosing where to apply safe-area rules.
+
+5. Fixed Expo linking warning:
+- Added `"scheme": "e2eapp"` in `app.json`.
+- Understood why linking scheme is important for production builds.
+
+6. Verified layout consistency:
+- Checked headers, paddings, and screen-level structure.
+- Practiced manual review of route screens without changing existing code.
+
+### Key Learning Outcomes
+
+1. Root-level setup and screen-level UI behavior are different concerns.
+2. Auth screens need both visual design and UX behavior (keyboard + scrolling).
+3. Expo warnings should be resolved early to avoid build-time issues later.
+4. Consistency checks are important after UI and navigation changes.
